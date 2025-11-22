@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://byonihmwoao1a"]
+
+[ext_resource type="Script" uid="uid://dd5rsahlwcby4" path="res://scripts/main.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://c6vlbms6uv0cc" path="res://playgrid.gd" id="2_0xm2m"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ig7tw")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="playgrid" type="GridContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 4
+script = ExtResource("2_0xm2m")
